@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!--title of the page-->
+  <title>knowagri</title>
+  <!--stylesheet link -->
+  <link rel="stylesheet" type="text/css" href="agrisheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<!--body of the page -->
+<body>
+
+  <!--header of the page-->
+  <header>
+    <!--elements of the header-->
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">Introduction</a></li>
+      <li><a style="cursor: pointer;" onclick="opennav()">To know</a></li>
+    </ul>
+    <!--heading right-->
+    <div class="about">
+      <a href="#">About us</a>
+    </div>
+  </header>
+
+  <!-- side navigation bar-->
+  <div  id="SN" class="sidenav">
+    <!--elements of the navigation bar (side)--> 
+    <a id="close" style="cursor: pointer;" onclick="closenav()">&times;</a>
+    <a href="soil.html" target="_blank">Soil</a>
+    <a href="#">Crops</a>
+    <a href="#">Climate</a>
+    <a href="#">Water</a>
+    <a href="#">labour</a>
+    
+  </div>
+  <!-- main section of the page-->
+  <div  class="main">
+    <h2>AGRICULTURE</h2>
+     <p style="letter-spacing: 2px;">"Agriculture is the foundation of manufactures, since the productions of nature are the materials of art."</p>
+     <br>
+     <i style="margin-left: 80%;">- Edward Gibbon</i>
+  </div>
+
+  <!-- footer of the web page -->
+  <footer>
+    <p>Follow us</p>
+    <a href="https://www.facebook.com" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+    <a href="https://www.gmail.com" class="google" target="_blank"><i class="fa fa-google"></i></a>
+    <a href="https://www.twitter.com" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+
+  </footer>
+  <!-- JS script for the side navigation bar to open and close-->
+  <script type="text/javascript">
+    function opennav(){
+      document.getElementById('SN').style.width = "20%";
+    }
+
+    function closenav(){
+      document.getElementById('SN').style.width = "0";
+    }
+  </script>
+</body>
+</html>
