@@ -1,0 +1,152 @@
+body{
+
+	margin : 0;
+	
+}
+
+header{
+
+	width: 100%;
+	height :10%;
+	background-color: white;
+	top:0;
+	position: fixed;
+	z-index: 3;
+}
+
+ul{
+
+	list-style-type: none;
+	background-color: none;
+	font-size: 25px;
+	margin : 0;
+	padding: 0;
+}
+
+header li{
+
+	float:left;
+	
+
+}
+
+header  a {
+	color:green;
+	text-decoration: none;
+	font-family: sans-serif;
+	display: block;
+	padding:17px 17px 18px 17px;
+	text-align: center;
+}
+
+header .active{
+
+	color: white;
+	background-color: green;
+}
+
+header  a:hover:not(.active) {
+	color:white;
+	background-color: #555;
+	transition: 0.3s;
+}
+
+.about {
+	float:right;
+	font-size: 25px;
+}
+
+.sidenav {
+	width:0;
+	height: 100%;
+	top:10%;
+	left:0;
+	background-color:rgba(0,128,0);
+	position: fixed;
+	z-index: 11;
+	overflow-x: hidden;
+	padding-top: 50px;
+	transition: 0.5s;
+	
+}
+
+.sidenav a {
+	display: block;
+	color: white;
+	font-family: "Lato";
+	font-size: 24px;
+	padding: 20px;
+	text-decoration: none;
+	
+}
+
+.sidenav a:hover:not(#close) {
+	background-color: white;
+	color: green;
+	border-left-width: 4px;
+	border-left: 8px solid green;
+	border-top-color: 2px solid green;
+	border-bottom-color: 2px solid green;
+	transition: 0.3s;
+}
+
+.sidenav #close{
+	margin-left: 50px
+	font-size:50px;
+	position: absolute;
+	top:0;
+	right:25px;
+}
+
+.main{
+	margin-top:63px;
+	height: 450px;
+	background-image: url("agri.jpg");
+	background-size: cover;
+	border:none;
+	background-repeat: no-repeat;
+	opacity:0.9;
+	color: white;
+	text-align: center;
+	padding: 150px 0 100px 0;
+	margin-bottom:0;
+}
+
+.main h2{
+
+	letter-spacing: 6px;
+	font-family: "Lucida Grande";
+	opacity:0.6;
+	font-size: 40px;
+	padding-bottom: 70px;
+}
+
+footer{
+	
+	height: 100px;
+	background-color: rgba(0,0,0,0.9);
+	margin-bottom: 0px;
+	padding-top:1px;
+	padding-bottom: 1px;
+	text-align: center;
+	color:white;
+	font-family: Consolas;
+}
+
+footer a{
+	display: inline-block;
+	margin:7px;
+}
+
+.facebook{
+	color:#3B5998;
+}
+
+.google{
+	color:#dd4b39;
+}
+
+.twitter{
+
+	color: #55ACEE;
+}
